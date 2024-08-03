@@ -1,40 +1,98 @@
-import React from "react";
+// import React from "react";
+import { useState } from "react";
 import "./StudySpotAdder.css";
+import Select from "react-select";
 
-const courses = ["CPSC 101", "BCOMM 152", "AFST 302", "AFST 201", "CPSC 251"];
+// const courses = ["CPSC 101", "BCOMM 152", "AFST 302", "AFST 201", "CPSC 251"];
 
-const buildings = ["Kinaniskis", "Yamnuska", "Rundle", "Crowsnest", "The Hub"];
+const courses = [
+  { value: "CPSC 101", label: "CPSC 101" },
+  { value: "BCOMM 152", label: "BCOMM 152" },
+  { value: "AFST 302", label: "AFST 302" },
+  { value: "AFST 201", label: "AFST 201" },
+  { value: "CPSC 251", label: "CPSC 251" },
+];
+
+const buildings = [
+  { value: "Kinaniskis", label: "Kinaniskis" },
+  { value: "Yamnuska", label: "Yamnuska" },
+  { value: "Rundle", label: "Rundle" },
+  { value: "Crowsnest", label: "Crowsnest" },
+  { value: "The Hub", label: "The Hub" },
+];
 
 function StudySpotAdder() {
+  //useState for course dropdown
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  //changes the course based on the dropdown selection
+  const handleCourseChange = (selectedCourse) => {
+    setSelectedCourse(selectedCourse);
+  };
+
+  //useState for buildings dropdown
+  const [selectedBuilding, setSelectedBuilding] = useState(null);
+  //changes the course based on the dropdown selection
+  const handleBuildingChange = (selectedBuilding) => {
+    setSelectedBuilding(selectedBuilding);
+  };
+
   return (
     <div className="container">
-      <h1>Add Study Session</h1>
       <div className="form-container">
+        <h1>Add Study Session</h1>
         <form>
-          <div className="course-selector">
+          <div className="courses">
             <h2>Course Selection</h2>
-            <select type="text" placeholder="courses">
-              <option>CPSC 499</option>
-            </select>
+            <Select
+              className="course-selector"
+              type="text"
+              placeholder="courses..."
+              options={courses}
+              value={selectedCourse}
+              onChange={handleCourseChange}
+            />
           </div>
           <div className="description">
             <h2>Description</h2>
-            <textarea type=""></textarea>
+            <textarea className="description-area" type="text"></textarea>
           </div>
           <div className="location">
             <h2>Location</h2>
-            <input type=""></input>
-            <input placeholder="Room #"></input>
+            <div className="location-inputs">
+              <Select
+                className="building-input"
+                type="text"
+                placeholder="building..."
+                options={buildings}
+                value={selectedBuilding}
+                onChange={handleBuildingChange}
+              />
+              <input className="room-input" placeholder="Room #"></input>
+            </div>
           </div>
           <div className="time">
             <h2>Time</h2>
-            <input type=""></input>
-            <div>
-              <input placeholder="start #"></input>
-              <input placeholder="end"></input>
+            <div className="time-inputs">
+              <input
+                type="text"
+                className="date-input"
+                placeholder="date..."
+              ></input>
+              <div className="start-end">
+                <div className="start">
+                  <label>Start:</label>
+                  <input placeholder="start #"></input>
+                </div>
+                <div className="end">
+                  <label>End:</label>
+                  <input placeholder="end"></input>
+                </div>
+              </div>
             </div>
           </div>
-          <button>Submit</button>
+          <div className="submit-container">
+            <input className="submit" type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     </div>

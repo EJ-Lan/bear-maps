@@ -2,6 +2,7 @@ import reactLogo from "../assets/react.svg";
 import "./Navbar.css";
 import { useState } from "react";
 function Navbar() {
+  //content within the search bar
   const [searchItem, setSearchItem] = useState("");
 
   return (

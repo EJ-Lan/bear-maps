@@ -48,6 +48,7 @@
   background-color: #28a268;
   color: #fff;
   text-transform: uppercase;
+  border: none;
 }
 
 .submit-btn:hover,
