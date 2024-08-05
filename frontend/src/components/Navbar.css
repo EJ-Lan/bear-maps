@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* use gap to seperate the items instead of padding? */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -15,6 +15,7 @@
 
   display: flex;
   justify-self: flex-start;
+  gap: 10px;
   align-items: center;
   padding: 20px;
   color: #fff;
@@ -34,7 +35,7 @@
 
 .search-bar {
   width: 75vw;
-  margin: 10px;
+  /* margin: 10px; */
   height: 35px;
   border-radius: 5px;
   padding: 10px;
@@ -54,4 +55,5 @@
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: #1d7048;
+  cursor: pointer;
 }

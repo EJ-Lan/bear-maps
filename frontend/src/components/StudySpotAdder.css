@@ -113,3 +113,10 @@ h2 {
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(116, 116, 125, 0.447);
 }
+
+.submit:hover,
+.submit:focus {
+  background-color: #1d7048;
+}
+
+/* ask ej if i should use rem instead? */

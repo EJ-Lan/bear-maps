@@ -3,8 +3,6 @@ import { useState } from "react";
 import "./StudySpotAdder.css";
 import Select from "react-select";
 
-// const courses = ["CPSC 101", "BCOMM 152", "AFST 302", "AFST 201", "CPSC 251"];
-
 const courses = [
   { value: "CPSC 101", label: "CPSC 101" },
   { value: "BCOMM 152", label: "BCOMM 152" },
@@ -81,7 +79,7 @@ function StudySpotAdder() {
               <div className="start-end">
                 <div className="start">
                   <label>Start:</label>
-                  <input placeholder="start #"></input>
+                  <input placeholder="start"></input>
                 </div>
                 <div className="end">
                   <label>End:</label>
