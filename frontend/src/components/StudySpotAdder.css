@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin: 10px 0;
+}
+.form-container {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  padding: 30px;
+
+  /* min-width: 300px;
+  max-width: 800px; */
+}
+
+.form-container h1 {
+  margin: 0 0 20px 0;
+}
+
+.course-selector {
+  max-width: 600px;
+}
+
+.description-area {
+  padding: 10px;
+  width: 100%;
+  /* max-width: 800px; */
+  max-height: 300px;
+  min-height: 200px;
+}
+
+.location-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.building-input {
+  width: 50%;
+}
+
+.room-input {
+  width: 40%;
+  padding: 5px;
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  width: 80%;
+}
+.date-input {
+  width: 60%;
+  padding: 10px;
+  height: 40px;
+}
+
+.start-end {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.start,
+.end {
+  height: 40px;
+  margin: 2.5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.end input,
+.start input {
+  width: 62%;
+  height: 42px;
+  padding: 5px;
+}
+
+.end label,
+.start label {
+  padding-right: 5px;
+}
+
+.submit-container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  width: 150px;
+  height: 60px;
+  background-color: #007c41;
+  color: #ffdb05;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(116, 116, 125, 0.447);
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: #1d7048;
+}
+
+/* ask ej if i should use rem instead? */
