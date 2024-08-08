@@ -27,7 +27,7 @@ function StudySpotAdder() {
 
   //useState for buildings dropdown
   const [selectedBuilding, setSelectedBuilding] = useState(null);
-  const [roomNumber, setRoomNumber] = useState();
+  const [roomNumber, setRoomNumber] = useState("");
 
   //useState for date selector
   const [selectedDate, setselectedDate] = useState(null);
@@ -87,12 +87,9 @@ function StudySpotAdder() {
                 className="room-input"
                 placeholder="Room #"
                 value={roomNumber}
-                inputMode="numeric"
-                maxLength={3}
-                pattern="\d{3}"
+                maxLength={6}
                 onChange={(e) => {
-                  const value = parseInt(e.target.value);
-                  setRoomNumber(isNaN(value) ? "" : value);
+                  setRoomNumber(e.target.value);
                 }}
               />
             </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 function Navbar() {
   //content within the search bar
   const [searchItem, setSearchItem] = useState("");
+
   const handleSubmit = () => {
     console.log(searchItem);
   };
