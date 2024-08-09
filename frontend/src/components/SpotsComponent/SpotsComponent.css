@@ -1,0 +1,41 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.panel{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh; 
+    width: 33.33%;
+    
+
+}
+
+.body-text{
+    color: #8c8c8c;
+    justify-content: center;
+}
+
+.header{
+    color: #007c41;
+    font: Roboto;
+    padding: 25px;
+}
+
+.find-rooms{
+    /*width: 100vw;*/
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    color: #007c41;
+    background-color: #FFDB05;
+    box-shadow: 2px 2px #8c8c8c;
+    border-radius: 3px;
+
+    
+    
+    
+
+}
