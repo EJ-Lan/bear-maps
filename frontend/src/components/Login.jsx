@@ -1,12 +1,13 @@
 import React from 'react';
 import './Login.css';
+import Friends from '../assets/friends_studying.png';
 
 function LoginPage() {
     return (
         <div className="Login_Page">
             
             <div className="Right">
-                
+                <img src={Friends} alt="Friends Studying" />
             </div>
 
             <div className='Left'>
