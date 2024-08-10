@@ -1,0 +1,23 @@
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    background: #2f00ff;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+.added-courses {
+    background: #2f00ff
+}
+
+.box {
+    background-color: #F5F3E4;
+}
+
+.user-input {
+    color: #007c41;
+}

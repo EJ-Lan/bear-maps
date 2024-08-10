@@ -12,7 +12,7 @@ function SpotsComponent () {
                 <p className="body-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Nam vel risus at quam sollicitudin scelerisque. Sed vel augue sit amet leo dictum efficitur. Fusce nec efficitur tortor. Donec tempor malesuada libero, nec varius nibh.
 
-Pellentesque habitant morbi tristique senect
+ Pellentesque habitant morbi tristique senect
                 </p>
                 <h2>Food Spots in this building</h2>
                 <li>
