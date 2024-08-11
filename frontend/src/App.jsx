@@ -7,15 +7,16 @@ import StudySpotAdder from "./components/StudySpotAdder.jsx";
 
 import LoginPage from "./components/Login.jsx";
 import SignUpPage from "./components/SignUp.jsx";
+
 function App() {
   return (
     <>
-      {/* <Navbar />
-      <StudySpotAdder /> */}
+      <Navbar />
+      <StudySpotAdder />
 
       {/* For Testing Page Components */}
       {/* <LoginPage /> */}
-      <SignUpPage />
+      {/* <SignUpPage /> */}
     </>
   );
 }
