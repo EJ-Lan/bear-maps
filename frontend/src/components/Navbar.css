@@ -6,7 +6,7 @@
 /* use gap to seperate the items instead of padding? */
 .navbar-container {
   background-color: #007c41;
-  height: 7vh;
+  height: 8vh;
   padding: 10px;
   color: #fff;
 
@@ -34,7 +34,8 @@
 .title {
   padding: 5px;
   width: 75%;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .search-bar {

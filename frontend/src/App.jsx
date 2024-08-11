@@ -17,13 +17,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <StudySpotAdder />
 
       {/* For Testing Page Components */}
+
+      {/* <StudySpotAdder /> */}
+
       {/* <LoginPage /> */}
       {/* <SignUpPage /> */}
-      <StudySessionFinder />
-      <MajorFilter />
+
+      {/* <StudySessionFinder /> */}
+      {/* <MajorFilter /> */}
+
     </>
   );
 }
