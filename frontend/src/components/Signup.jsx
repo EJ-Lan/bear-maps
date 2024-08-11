@@ -30,6 +30,11 @@ function SignUpPage() {
                             <input type="password" className="password rectangle_content" placeholder='*******************' />
                         </div>
 
+                        <div className='input_rectangle'>
+                            <p className='rectangle_content'>Confirm Password</p>
+                            <input type="password" className="password rectangle_content" placeholder='*******************' />
+                        </div>
+
                         <div className='RMFP'>
 
                             <p>
