@@ -1,0 +1,151 @@
+.Right {
+    position: absolute;
+    background: #F5F3E4;
+
+    width: 55%;
+    height: 100%;
+    left: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 0; /* Sends to back of page */
+}
+
+.Left {
+    position: absolute;
+    background: white;
+
+    width: 45%;
+    height: 100%;
+    left: 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.Right img { /* Friends Image */
+    height: auto;
+    width: 600px;
+}
+
+.Left img { /* BearMaps Logo */
+    height: auto;
+    width: 400px;
+    margin: 40px 0px;
+}
+
+h1 {
+    width: 180px;
+    height: 49px;
+    color: #007C41;
+    font-size: 36px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+h3 {
+    width: 516px;
+    height: 19px;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.Login_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p,
+a,
+input,
+.Login,
+.SignUp {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    word-wrap: break-word;
+
+}
+
+p,
+a {
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.input_rectangle {
+    width: 554px;
+    height: 74px;
+    background: white;
+    border: 1px solid #C1BBBB;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rectangle_content {
+    margin-left: 25px;
+}
+
+input,
+input::placeholder {
+    color: rgba(0, 124, 65, 0.60);
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.RMFP { /* Remember Me, Forgot Password */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.LGSU { /* Login, Sign Up */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 140px;
+}
+
+.Login,
+.SignUp {
+    width: 125px;
+    height: 50px;
+    color: #007C41;
+}
+
+.Login {
+    background: #FFDB05;
+    border: none;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.SignUp {
+    background: white;
+    border: 1px solid #FFDB05;
+}
+
+.Login:hover {
+    background-color: #e6c104;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.SignUp:hover {
+    background: rgb(242, 242, 242);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.15);
+}
