@@ -1,4 +1,4 @@
-import reactLogo from "../assets/react.svg";
+import Logo from "../assets/bearmaps_logo.png";
 import "./Navbar.css";
 import { useState } from "react";
 function Navbar() {
@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div className="logo-container">
-        <img className="logo" src={reactLogo} alt="Maps" />
+        <img className="logo" src={Logo} alt="Maps" />
         <h1 className="title">BearMaps</h1>
       </div>
       <input
