@@ -1,55 +1,53 @@
 import React from 'react';
-import './SignUp.css';
+import styles from './SignUp.module.css';
 import Logo from '../assets/bearmaps_logo.png';
 import Friends from '../assets/friends_studying.png';
 
 function SignUpPage() {
     return (
-        <div className="SignUp_Page">
+        <div className={styles.SignUp_Page}>
 
-            <div className="Right">
+            <div className={styles.Right}>
                 <img src={Friends} alt="Friends Studying" />
             </div>
 
-            <div className='Left'>
+            <div className={styles.Left}>
                 <img src={Logo} alt="BearMaps Logo" />
 
-                <div className='SignUp_Container'>
+                <div className={styles.SignUp_Container}>
 
                     <h1>BearMaps</h1>
                     <h3>For UofA Students by UofA Students, find your study spot now!</h3>
 
                     <form>
-                        <div className='input_rectangle'>
-                            <p className='rectangle_content'>Email (ualberta domain)</p>
-                            <input type="text" className="email rectangle_content" placeholder='tgakinlo@ualberta.ca' />
+                        <div className={styles.input_rectangle}>
+                            <p className={styles.rectangle_content}>Email (ualberta domain)</p>
+                            <input type="text" className={`${styles.email} ${styles.rectangle_content}`} placeholder='tgakinlo@ualberta.ca' />
                         </div>
 
-                        <div className='input_rectangle'>
-                            <p className='rectangle_content'>Password</p>
-                            <input type="password" className="password rectangle_content" placeholder='*******************' />
+                        <div className={styles.input_rectangle}>
+                            <p className={styles.rectangle_content}>Password</p>
+                            <input type="password" className={`${styles.password} ${styles.rectangle_content}`} placeholder='*******************' />
                         </div>
 
-                        <div className='input_rectangle'>
-                            <p className='rectangle_content'>Confirm Password</p>
-                            <input type="password" className="password rectangle_content" placeholder='*******************' />
+                        <div className={styles.input_rectangle}>
+                            <p className={styles.rectangle_content}>Confirm Password</p>
+                            <input type="password" className={`${styles.password} ${styles.rectangle_content}`} placeholder='*******************' />
                         </div>
 
-                        <div className='RMFP'>
-
+                        <div className={styles.RMFP}>
                             <p>
-                                <input type="checkbox" className='checkbox' />
+                                <input type="checkbox" className={styles.checkbox} />
                                 Remember Me
                             </p>
-                            <a>Forgot Password?</a>
+                            <a href="#">Forgot Password?</a>
                         </div>
 
-                        <div className='SULG'>
-                            <button  type='submit' className="SignUp">Sign Up</button>
-                            <button                className="Login">Login</button>
+                        <div className={styles.SULG}>
+                            <button type='submit' className={styles.SignUp}>Sign Up</button>
+                            <button className={styles.Login}>Login</button>
                         </div>
                     </form>
-
 
                 </div>
             </div>

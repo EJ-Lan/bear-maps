@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css';
+import styles from './Login.module.css';
 import Logo from '../assets/bearmaps_logo.png';
 import Friends from '../assets/friends_studying.png';
 
