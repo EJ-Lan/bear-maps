@@ -3,7 +3,7 @@ import './Login.css';
 import Logo from '../assets/bearmaps_logo.png';
 import Friends from '../assets/friends_studying.png';
 
-function LoginPage() {
+function SignUpPage() {
     return (
         <div className="Login_Page">
 
@@ -53,4 +53,4 @@ function LoginPage() {
     );
 }
 
-export default LoginPage;
+export default SignUpPage;
