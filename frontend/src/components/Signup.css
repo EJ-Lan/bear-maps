@@ -114,7 +114,7 @@ input::placeholder {
     margin-right: 5px;
 }
 
-.LGSU { /* Login, Sign Up */
+.SULG { /* Login, Sign Up */
     display: flex;
     justify-content: space-between;
     margin: 0px 140px;

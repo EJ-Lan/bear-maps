@@ -6,8 +6,7 @@ import Navbar from "./components/Navbar.jsx";
 import StudySpotAdder from "./components/StudySpotAdder.jsx";
 
 import LoginPage from "./components/Login.jsx";
-import SignUpPage from "./components/SIgnup.jsx";
-
+import SignUpPage from "./components/SignUp.jsx";
 function App() {
   return (
     <>

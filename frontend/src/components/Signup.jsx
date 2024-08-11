@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css';
+import './SignUp.css';
 import Logo from '../assets/bearmaps_logo.png';
 import Friends from '../assets/friends_studying.png';
 
@@ -39,9 +39,9 @@ function SignUpPage() {
                             <a>Forgot Password?</a>
                         </div>
 
-                        <div className='LGSU'>
-                            <button type='submit' className="Login">Login</button>
-                            <button               className="SignUp">Sign Up</button>
+                        <div className='SULG'>
+                            <button  type='submit' className="SignUp">Sign Up</button>
+                            <button                className="Login">Login</button>
                         </div>
                     </form>
 
