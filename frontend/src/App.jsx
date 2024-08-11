@@ -4,6 +4,10 @@
 // import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import StudySpotAdder from "./components/StudySpotAdder.jsx";
+import StudySessionFinder from "./components/ActiveStudySessions.jsx"; 
+import MajorFilter from "./components/StudentMajorFilter.jsx";
+
+
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -12,6 +16,8 @@ function App() {
     <>
       <Navbar />
       <StudySpotAdder />
+      <StudySessionFinder />
+      <MajorFilter />
     </>
   );
 }
