@@ -5,46 +5,44 @@ import Friends from '../assets/friends_studying.png';
 
 function LoginPage() {
     return (
-        <div className="Login_Page">
+        <div className={styles.Login_Page}>
 
-            <div className="Right">
+            <div className={styles.Right}>
                 <img src={Friends} alt="Friends Studying" />
             </div>
 
-            <div className='Left'>
+            <div className={styles.Left}>
                 <img src={Logo} alt="BearMaps Logo" />
 
-                <div className='Login_Container'>
+                <div className={styles.Login_Container}>
 
                     <h1>BearMaps</h1>
                     <h3>For UofA Students by UofA Students, find your study spot now!</h3>
 
                     <form>
-                        <div className='input_rectangle'>
-                            <p className='rectangle_content'>Email (ualberta domain)</p>
-                            <input type="text" className="email rectangle_content" placeholder='tgakinlo@ualberta.ca' />
+                        <div className={styles.input_rectangle}>
+                            <p className={styles.rectangle_content}>Email (ualberta domain)</p>
+                            <input type="text" className={`${styles.email} ${styles.rectangle_content}`} placeholder='tgakinlo@ualberta.ca' />
                         </div>
 
-                        <div className='input_rectangle'>
-                            <p className='rectangle_content'>Password</p>
-                            <input type="password" className="password rectangle_content" placeholder='*******************' />
+                        <div className={styles.input_rectangle}>
+                            <p className={styles.rectangle_content}>Password</p>
+                            <input type="password" className={`${styles.password} ${styles.rectangle_content}`} placeholder='*******************' />
                         </div>
 
-                        <div className='RMFP'>
-
+                        <div className={styles.RMFP}>
                             <p>
-                                <input type="checkbox" className='checkbox' />
+                                <input type="checkbox" className={styles.checkbox} />
                                 Remember Me
                             </p>
-                            <a>Forgot Password?</a>
+                            <a href="#">Forgot Password?</a>
                         </div>
 
-                        <div className='LGSU'>
-                            <button type='submit' className="Login">Login</button>
-                            <button               className="SignUp">Sign Up</button>
+                        <div className={styles.LGSU}>
+                            <button type='submit' className={styles.Login}>Login</button>
+                            <button className={styles.SignUp}>Sign Up</button>
                         </div>
                     </form>
-
 
                 </div>
             </div>

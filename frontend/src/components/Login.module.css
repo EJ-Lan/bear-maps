@@ -81,6 +81,10 @@ a {
     color: rgba(0, 0, 0, 0.61);
 }
 
+a {
+    text-decoration: none;
+}
+
 .input_rectangle {
     width: 554px;
     height: 74px;
