@@ -9,8 +9,6 @@ import LoginPage from "./components/Login.jsx";
 import SignUpPage from "./components/SIgnup.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <>
       {/* <Navbar />
