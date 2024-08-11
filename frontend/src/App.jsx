@@ -12,9 +12,11 @@ function App() {
 
   return (
     <>
-      {/* <Navbar />
-      <StudySpotAdder /> */}
-      <LoginPage />
+      <Navbar />
+      <StudySpotAdder />
+
+      {/* For Testing Page Components */}
+      {/* <LoginPage /> */}
     </>
   );
 }
