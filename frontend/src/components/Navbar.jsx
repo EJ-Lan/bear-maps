@@ -5,6 +5,10 @@ function Navbar() {
   //content within the search bar
   const [searchItem, setSearchItem] = useState("");
 
+  const handleSubmit = () => {
+    console.log(searchItem);
+  };
+
   return (
     <div className="navbar-container">
       <div className="logo-container">
@@ -18,7 +22,9 @@ function Navbar() {
         value={searchItem}
         onChange={(e) => setSearchItem(e.target.value)}
       />
-      <button className="submit-btn">Submit</button>
+      <button onClick={handleSubmit} className="submit-btn">
+        Submit
+      </button>
     </div>
   );
 }

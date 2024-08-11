@@ -5,37 +5,40 @@
 }
 /* use gap to seperate the items instead of padding? */
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  top: 0;
-  position: sticky;
-  z-index: 1;
   background-color: #007c41;
   height: 7vh;
+  padding: 10px;
+  color: #fff;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   display: flex;
-  justify-self: flex-start;
+  justify-content: space-between;
   gap: 10px;
   align-items: center;
-  padding: 20px;
-  color: #fff;
 }
 
 .logo-container {
   display: flex;
+  align-items: center;
 }
 
 .logo {
   padding: 5px;
+  width: 25%;
+  height: auto;
 }
 
 .title {
   padding: 5px;
+  width: 75%;
+  font-size: 1.75rem;
 }
 
 .search-bar {
-  width: 75vw;
-  /* margin: 10px; */
+  flex-grow: 1;
   height: 35px;
   border-radius: 5px;
   padding: 10px;
@@ -43,7 +46,6 @@
 
 .submit-btn {
   min-width: 100px;
-  margin: 5px;
   height: 35px;
   border-radius: 5px;
   background-color: #28a268;
@@ -52,8 +54,12 @@
   border: none;
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.submit-btn:hover {
   background-color: #1d7048;
   cursor: pointer;
+  border: 2px solid #000;
+}
+
+.submit-btn:active {
+  background-color: #155e3a; /* Darker green */
 }
