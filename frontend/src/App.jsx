@@ -11,11 +11,11 @@ import SignUpPage from "./components/SignUp.jsx";
 function App() {
   return (
     <>
-      <Navbar />
-      <StudySpotAdder />
+      {/* <Navbar />
+      <StudySpotAdder /> */}
 
       {/* For Testing Page Components */}
-      {/* <LoginPage /> */}
+      <LoginPage />
       {/* <SignUpPage /> */}
     </>
   );

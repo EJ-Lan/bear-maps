@@ -103,6 +103,10 @@ a {
   margin-left: 25px;
 }
 
+.input_rectangle p, .input_rectangle input {
+  font-size: 200px;
+}
+
 input,
 input::placeholder {
   color: rgba(0, 124, 65, 0.60);

@@ -100,7 +100,10 @@ a {
 }
 
 .rectangle_content {
+  margin-top: 5px;
   margin-left: 25px;
+  font-size: 20px;
+
 }
 
 input,
