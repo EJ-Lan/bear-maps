@@ -5,7 +5,7 @@ import Friends from '../assets/friends_studying.png';
 
 function SignUpPage() {
     return (
-        <div className="Login_Page">
+        <div className="SignUp_Page">
 
             <div className="Right">
                 <img src={Friends} alt="Friends Studying" />
@@ -14,7 +14,7 @@ function SignUpPage() {
             <div className='Left'>
                 <img src={Logo} alt="BearMaps Logo" />
 
-                <div className='Login_Container'>
+                <div className='SignUp_Container'>
 
                     <h1>BearMaps</h1>
                     <h3>For UofA Students by UofA Students, find your study spot now!</h3>
