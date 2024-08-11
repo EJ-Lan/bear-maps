@@ -137,3 +137,15 @@ input::placeholder {
     background: white;
     border: 1px solid #FFDB05;
 }
+
+.Login:hover {
+    background-color: #e6c104;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.SignUp:hover {
+    background: rgb(242, 242, 242);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.15);
+}
