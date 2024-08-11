@@ -1,3 +1,6 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .Right {
   position: absolute;
   background: #F5F3E4;
@@ -26,7 +29,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .Right img {
@@ -76,7 +78,6 @@ input,
   font-weight: 400;
   font-size: 18px;
   word-wrap: break-word;
-
 }
 
 p,
@@ -100,11 +101,8 @@ a {
 }
 
 .rectangle_content {
+  margin-top: 5px;
   margin-left: 25px;
-}
-
-.input_rectangle p, .input_rectangle input {
-  font-size: 200px;
 }
 
 input,
