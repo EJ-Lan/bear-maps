@@ -14,32 +14,39 @@ function LoginPage() {
             <div className='Left'>
                 <img src={Logo} alt="BearMaps Logo" />
 
-                <h1>BearMaps</h1>
-                <h3>For UofA Students by UofA Students, find your study spot now!</h3>
+                <div className='Login_Container'>
 
-                <div className="Rectangle2" />
-                <div className="Rectangle7" />
-                <div className="Rectangle4" />
-                <div className="Rectangle5" />
+                    <h1>BearMaps</h1>
+                    <h3>For UofA Students by UofA Students, find your study spot now!</h3>
+
+                    <form>
+                        <div className='input_rectangle'>
+                            <p className='rectangle_content'>Email (ualberta domain)</p>
+                            <input type="text" className="email rectangle_content" placeholder='tgakinlo@ualberta.ca' />
+                        </div>
+
+                        <div className='input_rectangle'>
+                            <p className='rectangle_content'>Password</p>
+                            <input type="password" className="password rectangle_content" placeholder='*******************' />
+                        </div>
+
+                        <div className='RMFP'>
+
+                            <p>
+                                <input type="checkbox" className='checkbox' />
+                                Remember Me
+                            </p>
+                            <a>Forgot Password?</a>
+                        </div>
+
+                        <div className='LGSU'>
+                            <button type='submit' className="Login">Login</button>
+                            <button               className="SignUp">Sign Up</button>
+                        </div>
+                    </form>
 
 
-                <form>
-                    <div className='input_rectangle'>
-                        <p>Email (ualberta domain)</p>
-                        <input type="text" className="email" placeholder='tgakinlo@ualberta.ca' />
-                    </div>
-
-                    <div className='input_rectangle'>
-                        <p>Password</p>
-                        <input type="password" className="password" placeholder='*******************' />
-                    </div>
-
-                    <button className="Login">Login</button>
-                    <button className="SignUp">Sign Up</button>
-                </form>
-
-                <p>Remember Me</p>
-                <a>Forgot Password?</a>
+                </div>
             </div>
 
         </div>
