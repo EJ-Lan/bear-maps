@@ -28,24 +28,13 @@ export default function StudySessionFinder(){
     return (
         <section class="sidebar">
             <div class="session-search-bar">
-                <input 
-                    type="text" 
-                    id="search-input"
-                    placeholder="Search Study Sessions..." 
-                    onChange={handleSearch}
-                />
+                <input type="text" id="search-input"placeholder="Search Study Sessions..." onChange={handleSearch}/>
             </div>
             <hr class="divider" />
             <div id="class-list" class="class-list">
                 {filteredClasses.map(classItem => (
-                    <div 
-                        key={classItem.name} 
-                        class="class-item"
-                    >
-                        <div 
-                            class={`class-name ${activeClass === classItem ? 'active' : ''}`} 
-                            onClick={() => handleClick(classItem)}
-                        >
+                    <div key={classItem.name} class="class-item">
+                        <div class={`class-name ${activeClass === classItem ? 'active' : ''}`} onClick={() => handleClick(classItem)}>
                             <span class="class-name-text">{classItem.name}</span>
                             <span>{classItem.number}</span>
                         </div>
