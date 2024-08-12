@@ -12,7 +12,9 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div className="logo-container">
-        <img className="logo" src={Logo} alt="Maps" />
+        <div className="logo">
+          <img src={Logo} alt="Maps" width={556} height={293} />
+        </div>
         <h1 className="title">BearMaps</h1>
       </div>
       <input
