@@ -11,6 +11,9 @@
   display: flex;
   justify-content: center;
 }
+h1 {
+  white-space: nowrap;
+}
 
 h2 {
   margin: 10px 0;

@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* use gap to seperate the items instead of padding? */
 .navbar-container {
   background-color: #007c41;
-  height: 8vh;
+  height: 70px;
   padding: 10px;
   color: #fff;
 
@@ -22,20 +28,20 @@
 
 .logo-container {
   display: flex;
+  width: clamp(150px, 33vw, 300px);
   align-items: center;
 }
 
 .logo {
-  padding: 5px;
-  height: 60px; 
-  width: auto;
+  width: clamp(80px, 10vw, 100px);
 }
 
 .title {
-  padding: 5px;
-  width: 75%;
-  font-size: 1.5rem;
-  color: white;
+  display: block;
+  color: #fff;
+  margin-left: 10px;
+  font-size: clamp(1.5em, 5vw, 2.5em);
+  height: min-content;
 }
 
 .search-bar {
@@ -46,13 +52,15 @@
 }
 
 .submit-btn {
-  min-width: 100px;
+  min-width: 80px;
+  max-width: 100px;
   height: 35px;
   border-radius: 5px;
   background-color: #28a268;
   color: #fff;
   text-transform: uppercase;
   border: none;
+  margin: 5px;
 }
 
 .submit-btn:hover {
