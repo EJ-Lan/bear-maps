@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./ActiveStudySessions.css";
+import { BiCaretDown, BiCaretRight } from 'react-icons/bi';
+
 
 
 export default function StudySessionFinder(){
@@ -35,7 +37,10 @@ export default function StudySessionFinder(){
                 {filteredClasses.map(classItem => (
                     <div key={classItem.name} class="class-item">
                         <div class={`class-name ${activeClass === classItem ? 'active' : ''}`} onClick={() => handleClick(classItem)}>
-                            <span class="class-name-text">{classItem.name}</span>
+                            <span class="class-name-text">
+                                {activeClass === classItem ? <BiCaretDown className="caret-icon" size={24} /> : <BiCaretRight className="caret-icon" size={24} />}
+                                {classItem.name}
+                            </span>
                             <span>{classItem.number}</span>
                         </div>
                         {activeClass === classItem && (
