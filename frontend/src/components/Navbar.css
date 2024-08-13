@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* use gap to seperate the items instead of padding? */
+.navbar-container {
+  background-color: #007c41;
+  height: 70px;
+  padding: 10px;
+  color: #fff;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  width: clamp(150px, 33vw, 300px);
+  align-items: center;
+}
+
+.logo {
+  width: clamp(80px, 10vw, 100px);
+}
+
+.title {
+  display: block;
+  color: #fff;
+  margin-left: 10px;
+  font-size: clamp(1.5em, 5vw, 2.5em);
+  height: min-content;
+}
+
+.search-bar {
+  flex-grow: 1;
+  height: 35px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.submit-btn {
+  min-width: 80px;
+  max-width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #28a268;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  margin: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #1d7048;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.submit-btn:active {
+  background-color: #155e3a; /* Darker green */
+}

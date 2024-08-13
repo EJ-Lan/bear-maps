@@ -1,2 +1,2 @@
-# web-group
+# bear-maps
 Web Project

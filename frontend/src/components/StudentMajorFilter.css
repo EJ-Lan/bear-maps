@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 17%; 
+    height: 50vh; 
+    border-radius: 10px; 
+    background-color: #EEEEED;
+    overflow: auto;
+    border: solid  #a8a8a8;
+}
+
+#search-input {
+    display: inline-block;
+    margin: 8px;
+    padding: 7px;
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+}
+
+.divider {
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: rgb(202, 202, 202);
+}
+
+.major-item{
+    border-bottom:0.2px solid;
+}
+.major-name {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #E8E8E9;
+    width: 100%; 
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.major-name-text {
+    display: flex;
+    align-items: center; 
+}
+
+.student-item {
+    display: flex;
+    text-align:center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    font-weight: 600;
+}
+.major-name.active {
+    background-color: #BDE2D2;
+}
+.caret-icon {
+    color: #007C40;
+}
+
