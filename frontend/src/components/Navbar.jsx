@@ -13,12 +13,14 @@ function Navbar() {
 
   return (
     <div className="navbar-container">
-      <div className="logo-container">
-        <div className="logo">
-          <img src={Logo} alt="Maps" width={556} height={293} />
+      <NavLink to="/signup">
+        <div className="logo-container">
+          <div className="logo">
+            <img src={Logo} alt="Maps" width={556} height={293} />
+          </div>
+          <h1 className="title">BearMaps</h1>
         </div>
-        <h1 className="title">BearMaps</h1>
-      </div>
+      </NavLink>
       <input
         className="search-bar"
         type="text"

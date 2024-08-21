@@ -32,6 +32,12 @@ img {
   align-items: center;
 }
 
+/* .nav_link {
+  margin: 0;
+  padding: 0;
+  display: block;
+} */
+
 .logo {
   width: clamp(80px, 10vw, 100px);
 }
@@ -40,7 +46,7 @@ img {
   display: block;
   color: #fff;
   margin-left: 10px;
-  font-size: clamp(1.5em, 5vw, 2.5em);
+  font-size: clamp(1.5em, 5vw, 2.3em);
   height: min-content;
 }
 
