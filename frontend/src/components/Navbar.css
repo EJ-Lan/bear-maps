@@ -32,12 +32,6 @@ img {
   align-items: center;
 }
 
-/* .nav_link {
-  margin: 0;
-  padding: 0;
-  display: block;
-} */
-
 .logo {
   width: clamp(80px, 10vw, 100px);
 }
