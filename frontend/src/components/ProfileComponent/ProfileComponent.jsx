@@ -6,8 +6,20 @@ import './ProfileComponent.css';
 //import Icon from '../assets/imageIcon.png';
 
 function ProfileComponent() {
-    
-    
+
+    const [selectedCourses, setSelectedCourses] = useState([]);
+    const [selectedCourse, setSelectedCourse] = useState("");
+
+    const handleAddCourse = () => {
+        if (selectedCourse && !selectedCourses.includes(selectedCourse)) {
+            setSelectedCourses([...selectedCourses, selectedCourse]);
+        }
+        setSelectedCourse("");  // Reset dropdown after adding
+    };
+
+    const handleRemoveCourse = (course) => {
+        setSelectedCourses(selectedCourses.filter(c => c !== course));
+    };
 
     return (
         <div className="background">
@@ -29,35 +41,42 @@ function ProfileComponent() {
                     <input type="number" className="input-field" placeholder="Year of Degree" required/>
                 
                     <div class="dropdown-container">
-                        <select required>
-                            <option value="" disabled selected>Courses</option>
-                            <option value="CMPUT 401">CMPUT 401</option>
-                            <option value="1"> CMPUT 101 </option>
-                            <option value="2"> CMPUT 174 </option>
-                            <option value="3"> CMPUT 175 </option>
-                            <option value="4"> CMPUT 191 </option>
-                            <option value="5"> CMPUT 195 </option>
-                            <option value="6"> CMPUT 200 </option>
-                            <option value="7"> CMPUT 201 </option>
-                            <option value="8"> CMPUT 204 </option>
-                            <option value="9"> CMPUT 206 </option>
-                            <option value="10"> CMPUT 210 </option>
-                            <option value="11"> CMPUT 229 </option>
-                            <option value="12"> CMPUT 250 </option>
-                            <option value="13"> CMPUT 256 </option>
-                            <option value="14"> CMPUT 261 </option>
-                            <option value="15"> CMPUT 267 </option>
-                            <option value="16"> CMPUT 272 </option>
-                            <option value="17"> CMPUT 274 </option>
-                            <option value="18"> CMPUT 275 </option>
-                            <option value="19"> CMPUT 291 </option>
-                            <option value="20"> CMPUT 300 </option>
+                        <select value={selectedCourse} onChange={(e) => setSelectedCourse(e.target.value)} required>
+                            <option value="" disabled seleced>Courses</option>
+                            <option value="CMPUT 101"> CMPUT 101 </option>
+                            <option value="CMPUT 174"> CMPUT 174 </option>
+                            <option value="CMPUT 175"> CMPUT 175 </option>
+                            <option value="CMPUT 191"> CMPUT 191 </option>
+                            <option value="CMPUT 195"> CMPUT 195 </option>
+                            <option value="CMPUT 200"> CMPUT 200 </option>
+                            <option value="CMPUT 201"> CMPUT 201 </option>
+                            <option value="CMPUT 204"> CMPUT 204 </option>
+                            <option value="CMPUT 206"> CMPUT 206 </option>
+                            <option value="CMPUT 210"> CMPUT 210 </option>
+                            <option value="CMPUT 229"> CMPUT 229 </option>
+                            <option value="CMPUT 250"> CMPUT 250 </option>
+                            <option value="CMPUT 256"> CMPUT 256 </option>
+                            <option value="CMPUT 261"> CMPUT 261 </option>
+                            <option value="CMPUT 267"> CMPUT 267 </option>
+                            <option value="CMPUT 272"> CMPUT 272 </option>
+                            <option value="CMPUT 274"> CMPUT 274 </option>
+                            <option value="CMPUT 275"> CMPUT 275 </option>
+                            <option value="CMPUT 291"> CMPUT 291 </option>
+                            <option value="CMPUT 296"> CMPUT 296 </option>
+                            <option value="CMPUT 297"> CMPUT 297 </option>
+                            <option value="CMPUT 298"> CMPUT 298 </option>
+                            <option value="CMPUT 299"> CMPUT 299 </option>
+                            <option value="CMPUT 300"> CMPUT 300 </option>
                         </select>
-                        <button id="add-course" className='add-course'> Add Course </button>
+                        <button id="add-course" className='add-course' onClick={handleAddCourse}> Add Course </button>
                     </div>
 
                     <div class="tag-container">
-                        <div class="tag">CMPUT 401 <span class="remove-tag">X</span></div>
+                        {selectedCourses.map((course, index) => (
+                            <div className="tag" key={index}>
+                                {course} <span class="remove-tag" onClick={() => handleRemoveCourse(course)}>X</span>
+                            </div>
+                        ))}
                     </div>
 
 
