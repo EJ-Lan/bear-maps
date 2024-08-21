@@ -1,23 +1,162 @@
-.course-list {
-    list-style-type: none;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.course-list li {
-    background: #2f00ff;
-    padding: 8px;
-    margin: 4px 0;
-    border-radius: 4px;
-}
-
-.added-courses {
-    background: #2f00ff
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+   /* align-items: center; */
 }
 
 .box {
-    background-color: #F5F3E4;
+    background-color: #f9f6ee;
+    width: 50%;
+    height: 50%;
+    max-width: 350px;
+    max-height: 500px;
+    min-width: 200px;
+    min-height: 500px;
+  }
+
+.header {
+    display: flex;
+    justify-content: right;
 }
 
-.user-input {
-    color: #007c41;
+.x-button {
+    border-radius: 0px;
+    margin: 2px;
+    padding: 2px;;
 }
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+}
+.profile-icon{
+    display: flex;
+    margin: 10px auto;
+}
+
+.edit-photo {
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin: 0px;
+}
+form {
+    width: 100%;
+}
+
+.input-field {
+    width: calc(100% - 40px); 
+    padding: 8px;
+    box-sizing: border-box; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: transparent;
+}
+
+.input-field::placeholder {
+    color: #007c41;
+    text-decoration: bold;
+
+}
+
+.input-field:focus {
+    border: 3px solid #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dropdown-container select {
+    background-color: white;
+    width: 56%;
+    padding: 8px;
+    box-sizing: border-box; 
+    margin-left: 20px;
+    margin-right: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: transparent;
+}
+
+.add-course {
+    width: 30%;
+    padding: 5px;
+    border-radius: 0;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+.submit-button {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #007c41;
+    color: #FFDB05;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.39);
+    border-radius: 3px;
+}
+
+.submit-btn:hover {
+    background-color: #066714;
+}
+
+.submit:active{
+
+    box-shadow: none;
+}
+
+.submit-btn {
+    
+    background-color: #0a8a1e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

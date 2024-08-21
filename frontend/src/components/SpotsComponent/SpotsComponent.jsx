@@ -1,7 +1,7 @@
 //import React from "@vitejs/plugin-react-swc";
 //import React from "react"
 import './SpotsComponent.css'
-
+import 
 function SpotsComponent () {
     return (
         <div className="panel"> 
