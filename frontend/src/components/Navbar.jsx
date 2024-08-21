@@ -1,6 +1,8 @@
 import Logo from "../assets/bearmaps_logo.png";
 import "./Navbar.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   //content within the search bar
   const [searchItem, setSearchItem] = useState("");
