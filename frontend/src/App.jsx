@@ -3,6 +3,8 @@
 // import viteLogo from "/vite.svg";
 // import "./App.css";
 
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar.jsx";
 import StudySpotAdder from "./components/StudySpotAdder.jsx";
 
@@ -14,17 +16,18 @@ import MajorFilter from "./components/StudentMajorFilter.jsx";
 function App() {
   return (
     <>
-      <Navbar />
-
       {/* For Testing Page Components */}
-
-      <StudySpotAdder />
-
-      {/* <LoginPage /> */}
-      {/* <SignUpPage /> */}
-
-      {/* <StudySessionFinder /> */}
-      {/* <MajorFilter /> */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<LoginPage />}></Route>
+        <Route path="/signup" element={<SignUpPage />}></Route>
+        <Route path="/addStudySpot" element={<StudySpotAdder />}></Route>
+        <Route
+          path="/findStudySession"
+          element={<StudySessionFinder />}
+        ></Route>
+        <Route path="/filterMajor" element={<MajorFilter />}></Route>
+      </Routes>
     </>
   );
 }
