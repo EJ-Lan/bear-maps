@@ -28,7 +28,7 @@ function ForgotPasswordPage() {
 
             <div className={styles.CSU}>
               <button type='submit' className={styles.Continue}>Continue</button>
-              <p>Don't have an Account?</p> <a>Sign Up</a>
+              <p>Don't have an Account? <a href=''>Sign Up</a></p> 
             </div>
           </form>
 
