@@ -1,0 +1,81 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.Center {
+  position: absolute;
+  background: #F5F3E4;
+
+  width: 56%;
+  height: 100%;
+  left: 22%;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  z-index: 0;
+  /* Sends to back of page */
+}
+
+.Bearmaps_Logo {
+  /* BearMaps Logo */
+  position: absolute;
+  height: auto;
+  width: 250px;
+  margin: 40px 40px;
+}
+
+.Profile_Picture {
+  /* Profile Picture */
+  height: auto;
+  width: 200px;
+  margin-top: 75px;
+}
+
+.Profile_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
+  /* width: 600px; */
+}
+
+.Profile_Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 700px;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h4, .courses, .current, .studysesh {
+  background-color: white;
+  font-family: 'Roboto';
+  border-radius: 5px;
+  font-weight: 600px;
+  color: #007C41;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.email,
+.degree,
+.year {
+  height: 50px;
+  width: 200px;
+  left: 0;
+}
+
+.bio {
+  height: 200px;
+  width: 400px;
+  left: 50%;
+}
