@@ -14,7 +14,7 @@ function ProfileComponent() {
         if (selectedCourse && !selectedCourses.includes(selectedCourse)) {
             setSelectedCourses([...selectedCourses, selectedCourse]);
         }
-        setSelectedCourse("");  // Reset dropdown after adding
+        setSelectedCourse("");  // resets dropdown after adding
     };
 
     const handleRemoveCourse = (course) => {

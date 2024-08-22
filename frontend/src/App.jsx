@@ -3,14 +3,14 @@
 //import viteLogo from '/vite.svg'
 //import './App.css' //<SpotsComponent/>
 
-//import SpotsComponent from "./components/SpotsComponent/SpotsComponent.jsx"
+import SpotsComponent from "./components/SpotsComponent/SpotsComponent.jsx"
 import ProfileComponent from "./components/ProfileComponent/ProfileComponent.jsx"
 
 function App() {
 
   return (
     <>
-      
+      <SpotsComponent/>
       <ProfileComponent/>
     </>
   )

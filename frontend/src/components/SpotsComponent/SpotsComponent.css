@@ -9,33 +9,119 @@
     justify-content: space-between;
     height: 100vh; 
     width: 33.33%;
+    max-width: 1500px;
     
 
+}
+
+.back {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.x-button{
+    background: #FFFFFF;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:#8c8c8c;
+}
+
+.header{
+    margin: 25px;
+    margin-top: 0px;
+    color: #007c41;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height / width = 9 / 16 * 100) */
+    background-color: #e0e0e0; /* Placeholder background color */
+    overflow: hidden;
+}
+
+.image-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .body-text{
     color: #8c8c8c;
     justify-content: center;
+    margin: 35px;
+    margin-top: 20px;
+    font-size: small;
+    text-align: justify;
 }
 
-.header{
-    color: #007c41;
-    font: Roboto;
-    padding: 25px;
+.food-spots{
+    margin: 35px;
+}
+
+.food-spots-title {
+    font-weight: bold;
+    
+}
+
+.food-list {
+    color: #8c8c8c;
+    font-size: medium;
+}
+
+
+.courses {
+    margin: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.courses-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.courses-list {
+    max-height: 150px; /* Adjust the height as needed */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.courses-list p {
+    margin: 5px 0;
+    font-size: 1em;
+    border-bottom: 1px solid #ccc;
 }
 
 .find-rooms{
+    display: flex;
+    justify-content: end;
+}
+
+.find-rooms-btn{
     /*width: 100vw;*/
-    position: absolute;
-    bottom: 0;
-    justify-content: space-around;
+    margin: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    justify-content: end;
     color: #007c41;
     background-color: #FFDB05;
-    box-shadow: 2px 2px #8c8c8c;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.39);
     border-radius: 3px;
-
-    
-    
-    
-
 }
