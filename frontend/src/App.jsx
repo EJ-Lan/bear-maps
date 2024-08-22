@@ -10,6 +10,7 @@ import LoginPage from "./components/Login.jsx";
 import SignUpPage from "./components/SignUp.jsx";
 import ForgotPasswordPage from "./components/ForgotPassword.jsx";
 import ViewProfilePage from "./components/ViewProfile.jsx";
+import EditProfilePage from "./components/EditProfile.jsx";
 
 import StudySessionFinder from "./components/ActiveStudySessions.jsx"; 
 import MajorFilter from "./components/StudentMajorFilter.jsx";
@@ -27,7 +28,8 @@ function App() {
       {/* <SignUpPage /> */}
       {/* <ForgotPasswordPage /> */}
 
-      <ViewProfilePage />
+      {/* <ViewProfilePage /> */}
+      <EditProfilePage />
 
       {/* <StudySessionFinder /> */}
       {/* <MajorFilter /> */}
