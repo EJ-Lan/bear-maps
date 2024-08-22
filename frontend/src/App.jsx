@@ -21,12 +21,12 @@ function App() {
 
       {/* For Testing Page Components */}
 
-      <ForgotPasswordPage />
 
       {/* <StudySpotAdder /> */}
 
       {/* <LoginPage /> */}
-      {/* <SignUpPage /> */}
+      <SignUpPage />
+      {/* <ForgotPasswordPage /> */}
 
       {/* <StudySessionFinder /> */}
       {/* <MajorFilter /> */}

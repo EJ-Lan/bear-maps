@@ -113,13 +113,6 @@ input::placeholder {
   outline: none;
 }
 
-.RMFP {
-  /* Remember Me, Forgot Password */
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 40px;
-}
-
 .checkbox {
   margin-right: 5px;
 }
@@ -128,7 +121,7 @@ input::placeholder {
   /* Login, Sign Up */
   display: flex;
   justify-content: space-between;
-  margin: 0px 140px;
+  margin: 30px 140px;
 }
 
 .Login,
