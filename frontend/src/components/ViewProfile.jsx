@@ -12,16 +12,22 @@ function ViewProfilePage() {
         <div className={styles.Profile_Container}>
 
           <img className={styles.Profile_Picture} src='https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png' alt='Profile Picture' />
-          <h2 className={styles.name}>FirstName LastName</h2>
+          <h2 className={styles.name}>First Name Last Name</h2>
 
           <div className={styles.Profile_Content}>
-            <h4 className={styles.email}> Email </h4>
-            <h4 className={styles.degree}> Degree </h4>
-            <h4 className={styles.year}> Year </h4>
-            <h4 className={styles.bio}> Bio </h4>
+
+            <div className={styles.Profile_Info}>
+              <div className={styles.leftSection}>
+                <h4 className={styles.email}> Email </h4>
+                <h4 className={styles.degree}> Degree </h4>
+                <h4 className={styles.year}> Year </h4>
+              </div>
+
+              <h4 className={styles.bio}> Bio </h4>
+            </div>
 
             <div className={styles.courses}>
-              <label for="dropdown1">Courses Enrolled</label>
+              <label htmlFor="dropdown1">Courses Enrolled</label>
               <select id="dropdown1" name="courses">
                 <option value="course1">Option 1</option>
                 <option value="course2">Option 2</option>
@@ -29,10 +35,17 @@ function ViewProfilePage() {
               </select>
             </div>
 
-            <h4 className={styles.current}>Current Study Spot/Course Studying</h4>
+            <div className={styles.current}>
+              <div className={styles.circles}>
+                <div className={styles.circle1}></div>
+                <div className={styles.circle2}></div>
+                <div className={styles.circle3}></div>
+              </div>
+              <h4>Current Study Spot/Course Studying</h4>
+            </div>
 
             <div className={styles.studysesh}>
-              <label for="dropdown2">Study Sessions Enrolled</label>
+              <label htmlFor="dropdown2">Study Sessions Enrolled</label>
               <select id="dropdown2" name="studysessions">
                 <option value="studysesh1">Option 1</option>
                 <option value="studysesh2">Option 2</option>

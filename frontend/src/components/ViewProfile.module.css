@@ -6,7 +6,7 @@
   background: #F5F3E4;
 
   width: 56%;
-  height: 100%;
+  min-height: 100vh;
   left: 22%;
 
   display: flex;
@@ -30,7 +30,7 @@
   /* Profile Picture */
   height: auto;
   width: 200px;
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 .Profile_Container {
@@ -50,19 +50,39 @@
   width: 700px;
 }
 
+.Profile_Info {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 10px;
+  width: 700px;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0px 25px 10px 0px;
+  width: 300px;
+  height: 200px;
+}
+
 h2 {
   font-family: 'Roboto';
-  font-weight: 400;
   font-size: 20px;
 }
 
-h4, .courses, .current, .studysesh {
+h4,
+.courses,
+.current,
+.studysesh {
   background-color: white;
   font-family: 'Roboto';
   border-radius: 5px;
-  font-weight: 600px;
-  color: #007C41;
-  font-size: 16px;
+  font-weight: bold;
+  color: #28A268;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -70,7 +90,7 @@ h4, .courses, .current, .studysesh {
 .degree,
 .year {
   height: 50px;
-  width: 200px;
+  width: auto;
   left: 0;
 }
 
@@ -78,4 +98,83 @@ h4, .courses, .current, .studysesh {
   height: 200px;
   width: 400px;
   left: 50%;
+}
+
+.courses,
+.current,
+.studysesh {
+  margin: 10px 0px;
+  width: 700px;
+}
+
+.courses, .studysesh {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.studysesh select, .courses select {
+  width: 50%;
+  padding: 5px; 
+  font-size: 16px;
+  font-family: 'Roboto';
+  border: 1px solid lightgray; 
+  border-radius: 5px;
+  color: black; 
+}
+
+.studysesh select:hover, .courses select:hover {
+  box-shadow: 0 0 0 3px rgba(0, 124, 65, 0.2);
+}
+
+.message {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+
+  background-color: #007C41;
+  color: #FFDB05;
+
+  margin-top: 5px;
+  padding: 10px;
+
+  border-radius: 5px;
+  border: none;
+}
+
+.message:hover {
+  background-color: #28A268;
+  cursor: pointer;
+}
+
+.current {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding: 5px 10px;
+}
+
+.circles {
+  display: flex;
+  margin-right: -25px;
+}
+
+.circle1, .circle2, .circle3 {
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+}
+
+.circle1 {
+  background-color: #28A268;
+}
+
+.circle2 {
+  background-color: #42FF00; 
+  transform: translateX(20%);
+}
+
+.circle3 {
+  background-color: #FF0000; 
+  transform: translateX(-140%);
 }
