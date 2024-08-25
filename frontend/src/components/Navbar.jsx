@@ -1,6 +1,8 @@
 import Logo from "../assets/bearmaps_logo.png";
 import "./Navbar.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   //content within the search bar
   const [searchItem, setSearchItem] = useState("");
@@ -11,10 +13,14 @@ function Navbar() {
 
   return (
     <div className="navbar-container">
-      <div className="logo-container">
-        <img className="logo" src={Logo} alt="Maps" />
-        <h1 className="title">BearMaps</h1>
-      </div>
+      <NavLink to="/signup">
+        <div className="logo-container">
+          <div className="logo">
+            <img src={Logo} alt="Maps" width={556} height={293} />
+          </div>
+          <h1 className="title">BearMaps</h1>
+        </div>
+      </NavLink>
       <input
         className="search-bar"
         type="text"

@@ -45,7 +45,9 @@ export default function MajorFilter() {
                                 {activeMajor === majorItem ? <BiCaretDown className="caret-icon" size={24} /> : <BiCaretRight className="caret-icon" size={24} />}
                                 {majorItem.name}
                             </span>
-                            <span>{majorItem.number}</span>
+                            <span>
+                                {majorItem.number}                                            
+                            </span>
                         </div>
                         {activeMajor === majorItem && (
                             <div className="major-students">
