@@ -16,10 +16,9 @@ function EditProfilePage() {
     });
   };
 
-  const handleUnselect = (event) => {
-    const value = event.target.value;
+  const handleUnselect = (indexToRemove) => {
     setSelectedOptions((prevSelected) => {
-      return prevSelected.filter((option) => option !== value);
+      return prevSelected.filter((_, index) => index !== indexToRemove);
     });
   };
 
@@ -55,7 +54,7 @@ function EditProfilePage() {
               <div className={styles.selectedContainer}>
                 {selectedOptions.map((option, index) => (
                   <div key={index} className={styles.selectedCourses}>
-                    {option} <div className={styles.cancel} onClick={handleUnselect}>X</div>
+                    {option} <div className={styles.cancel} onClick={() => handleUnselect(index)}>X</div>
                   </div>
                 ))}
               </div>
