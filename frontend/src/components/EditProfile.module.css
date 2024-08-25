@@ -45,17 +45,18 @@
 .Profile_Content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   width: 700px;
 }
 
 .Profile_Info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   margin-top: 10px;
-  width: 700px;
+  width: 600px;
+  gap: 25px;
 }
 
 h2 {
@@ -64,7 +65,7 @@ h2 {
 }
 
 h4,
-.courses {
+.course {
   background-color: white;
   font-family: 'Roboto';
   border-radius: 5px;
@@ -83,20 +84,14 @@ h4,
   left: 0;
 }
 
-
-.courses{
-  margin: 10px 0px;
-  width: 700px;
-}
-
-.courses {
+.course {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.courses select {
-  width: 50%;
+.course select {
+  width: 40%;
   padding: 5px; 
   font-size: 16px;
   font-family: 'Roboto';
@@ -105,7 +100,7 @@ h4,
   color: black; 
 }
 
-.courses select:hover {
+.course select:hover {
   box-shadow: 0 0 0 3px rgba(0, 124, 65, 0.2);
 }
 
@@ -126,5 +121,47 @@ h4,
 
 .submit:hover {
   background-color: #28A268;
+  cursor: pointer;
+}
+
+.selectedContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.selectedCourses {
+  background-color: grey;
+  color: black;
+
+  padding: 10px;
+  width: 130px;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cancel {
+  font-family: 'Roboto';
+  font-weight: bold;
+
+  color: red;
+
+  padding: 0 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.cancel:hover {
+  background-color: red;
+  color: white;
   cursor: pointer;
 }

@@ -29,9 +29,9 @@ function ViewProfilePage() {
             <div className={styles.courses}>
               <label htmlFor="dropdown1">Courses Enrolled</label>
               <select id="dropdown1" name="courses">
-                <option value="course1">Option 1</option>
-                <option value="course2">Option 2</option>
-                <option value="course3">Option 3</option>
+                <option value="CMPUT455">CMPUT455</option>
+                <option value="CMPUT328">CMPUT328</option>
+                <option value="CMPUT201">CMPUT201</option>
               </select>
             </div>
 
@@ -47,9 +47,9 @@ function ViewProfilePage() {
             <div className={styles.studysesh}>
               <label htmlFor="dropdown2">Study Sessions Enrolled</label>
               <select id="dropdown2" name="studysessions">
-                <option value="studysesh1">Option 1</option>
-                <option value="studysesh2">Option 2</option>
-                <option value="studysesh3">Option 3</option>
+                <option value="studysesh1">Session 1</option>
+                <option value="studysesh2">Session 2</option>
+                <option value="studysesh3">Session 3</option>
               </select>
             </div>
 

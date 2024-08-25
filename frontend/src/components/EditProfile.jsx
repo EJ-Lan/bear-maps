@@ -1,8 +1,28 @@
 import React from 'react';
+import { useState } from 'react';
 import styles from './EditProfile.module.css';
 import Logo from '../assets/bearmaps_logo.png';
 
 function EditProfilePage() {
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  const handleSelectChange = (event) => {
+    const value = event.target.value;
+    setSelectedOptions((prevSelected) => {
+      if (!prevSelected.includes(value)) {
+        return [...prevSelected, value];
+      }
+      return prevSelected;
+    });
+  };
+
+  const handleUnselect = (event) => {
+    const value = event.target.value;
+    setSelectedOptions((prevSelected) => {
+      return prevSelected.filter((option) => option !== value);
+    });
+  };
+
   return (
     <div className={styles.ViewProfilePage}>
       <img className={styles.Bearmaps_Logo} src={Logo} alt="BearMaps Logo" />
@@ -21,17 +41,25 @@ function EditProfilePage() {
               <h4 className={styles.email}> Email </h4>
               <h4 className={styles.degree}> Degree </h4>
               <h4 className={styles.year}> Year of Degree </h4>
-            </div>
 
-            <div className={styles.courses}>
-              <label htmlFor="dropdown1">Courses</label>
-              <select id="dropdown1" name="courses">
-                <option value="course1">Option 1</option>
-                <option value="course2">Option 2</option>
-                <option value="course3">Option 3</option>
-              </select>
-            </div>
+              <div className={styles.course}>
+                <label htmlFor="courseSelect">Choose Courses:</label>
+                <select id="courseSelect" onChange={handleSelectChange}>
+                  <option value="CMPUT455">CMPUT455</option>
+                  <option value="CMPUT328">CMPUT328</option>
+                  <option value="CMPUT201">CMPUT201</option>
+                </select>
+              </div>
 
+              {/* Display selected options as grey rectangles */}
+              <div className={styles.selectedContainer}>
+                {selectedOptions.map((option, index) => (
+                  <div key={index} className={styles.selectedCourses}>
+                    {option} <div className={styles.cancel} onClick={handleUnselect}>X</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <button className={styles.submit}>Submit</button>
