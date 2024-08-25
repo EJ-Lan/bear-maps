@@ -20,7 +20,7 @@ import MajorFilter from "./components/StudentMajorFilter.jsx";
 function App() {
   return (
     <>
-      {/* <Navbar />   */}
+      <Navbar />  
 
       {/* <StudySpotAdder /> */}
 
@@ -29,7 +29,7 @@ function App() {
       {/* <ForgotPasswordPage /> */}
 
       {/* <ViewProfilePage /> */}
-      <EditProfilePage />
+      {/* <EditProfilePage /> */}
 
       {/* <StudySessionFinder /> */}
       {/* <MajorFilter /> */}
