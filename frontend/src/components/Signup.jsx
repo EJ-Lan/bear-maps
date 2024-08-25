@@ -35,14 +35,6 @@ function SignUpPage() {
               <input type="password" className={`${styles.password} ${styles.rectangle_content}`} placeholder='*******************' />
             </div>
 
-            <div className={styles.RMFP}>
-              <p>
-                <input type="checkbox" className={styles.checkbox} />
-                Remember Me
-              </p>
-              <a href="#">Forgot Password?</a>
-            </div>
-
             <div className={styles.SULG}>
               <button type='submit' className={styles.SignUp}>Sign Up</button>
               <button className={styles.Login}>Login</button>

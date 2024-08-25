@@ -10,7 +10,11 @@ import StudySpotAdder from "./components/StudySpotAdder.jsx";
 
 import LoginPage from "./components/Login.jsx";
 import SignUpPage from "./components/SignUp.jsx";
-import StudySessionFinder from "./components/ActiveStudySessions.jsx";
+import ForgotPasswordPage from "./components/ForgotPassword.jsx";
+import ViewProfilePage from "./components/ViewProfile.jsx";
+import EditProfilePage from "./components/EditProfile.jsx";
+
+import StudySessionFinder from "./components/ActiveStudySessions.jsx"; 
 import MajorFilter from "./components/StudentMajorFilter.jsx";
 
 function App() {
@@ -28,6 +32,11 @@ function App() {
         ></Route>
         <Route path="/filterMajor" element={<MajorFilter />}></Route>
       </Routes>
+
+      {/* Routes to be added (New Tickets) */}
+      {/* <ForgotPasswordPage /> */}
+      {/* <ViewProfilePage /> */}
+      {/* <EditProfilePage /> */}
     </>
   );
 }
