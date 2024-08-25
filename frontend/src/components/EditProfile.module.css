@@ -58,25 +58,13 @@
   width: 700px;
 }
 
-.leftSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  margin: 0px 25px 10px 0px;
-  width: 300px;
-  height: 200px;
-}
-
 h2 {
   font-family: 'Roboto';
   font-size: 20px;
 }
 
 h4,
-.courses,
-.current,
-.studysesh {
+.courses {
   background-color: white;
   font-family: 'Roboto';
   border-radius: 5px;
@@ -86,6 +74,7 @@ h4,
   padding: 10px;
 }
 
+.name,
 .email,
 .degree,
 .year {
@@ -94,26 +83,19 @@ h4,
   left: 0;
 }
 
-.bio {
-  height: 200px;
-  width: 400px;
-  left: 50%;
-}
 
-.courses,
-.current,
-.studysesh {
+.courses{
   margin: 10px 0px;
   width: 700px;
 }
 
-.courses, .studysesh {
+.courses {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.studysesh select, .courses select {
+.courses select {
   width: 50%;
   padding: 5px; 
   font-size: 16px;
@@ -123,11 +105,11 @@ h4,
   color: black; 
 }
 
-.studysesh select:hover, .courses select:hover {
+.courses select:hover {
   box-shadow: 0 0 0 3px rgba(0, 124, 65, 0.2);
 }
 
-.message {
+.submit {
   font-family: 'Roboto';
   font-size: 20px;
   font-weight: bold;
@@ -142,39 +124,7 @@ h4,
   border: none;
 }
 
-.message:hover {
+.submit:hover {
   background-color: #28A268;
   cursor: pointer;
-}
-
-.current {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  padding: 5px 10px;
-}
-
-.circles {
-  display: flex;
-  margin-right: -25px;
-}
-
-.circle1, .circle2, .circle3 {
-  width: 30px; 
-  height: 30px;
-  border-radius: 50%;
-}
-
-.circle1 {
-  background-color: #28A268;
-}
-
-.circle2 {
-  background-color: #42FF00; 
-  transform: translateX(20%);
-}
-
-.circle3 {
-  background-color: #FF0000; 
-  transform: translateX(-140%);
 }
